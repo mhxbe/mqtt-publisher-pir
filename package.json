@@ -1,0 +1,29 @@
+{
+  "name": "mqtt-publisher-pir",
+  "version": "1.0.0",
+  "description": "A MQTT Client which publishes an event when motion is detected by a PIR sensor on a Raspberry Pi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mhxbe/mqtt-publisher-pir.git"
+  },
+  "keywords": [
+    "mqtt",
+    "pir",
+    "motion",
+    "raspberrypi"
+  ],
+  "author": "Mike Henderyckx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhxbe/mqtt-publisher-pir/issues"
+  },
+  "homepage": "https://github.com/mhxbe/mqtt-publisher-pir#readme",
+  "dependencies": {
+    "mqtt": "^2.18.8",
+    "onoff": "^3.2.1"
+  }
+}
