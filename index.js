@@ -16,8 +16,12 @@ const exit = () => {
 }
 
 pir.watch((err, value) => {
-  if (err) exit();
+  if (err) {
+    console.log('Oops...', err);
+    exit();
+  }
+  value ? console.log('Motion detected!') : console.log('All is clear now.');
   const stringifiedValue = JSON.stringify({ value, date: new Date().getTime() });
-  client.publish('office/motion', stringifiedValue, { retain: true });
+  client.publish('jidoka/office/motion', stringifiedValue, { retain: true });
 });
 
